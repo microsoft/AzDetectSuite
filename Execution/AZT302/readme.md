@@ -1,0 +1,5 @@
+| ID          | Name                                                             |Deploy|
+| ----------- |------------------------------------------------------------------|------|
+| AZT302.1    | Unmanaged Scripting: Automation Account Hybrid Worker Group|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhausec%2FAzDetectSuite%2Fmain%2FAzureThreatResearchMatrix%2FExecution%2FAZT301%2FAZT302-1.json)|
+| AZT302.2    | Unmanaged Scripting: Automation Account RunAs Account|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhausec%2FAzDetectSuite%2Fmain%2FAzureThreatResearchMatrix%2FExecution%2FAZT301%2FAZT302-2.json)|
+| AZT302.3    | Unmanaged Scripting: Automation Account Managed Identity Account|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhausec%2FAzDetectSuite%2Fmain%2FAzureThreatResearchMatrix%2FExecution%2FAZT301%2FAZT302-3.json)|

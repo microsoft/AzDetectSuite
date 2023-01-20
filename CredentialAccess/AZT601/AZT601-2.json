@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "Rule Name": {
+      "defaultValue": "AZT601.2",
+      "type": "String"
+    }
+  },
+  "variables": {},
+  "resources": [
+    {
+      "type": "microsoft.insights/scheduledqueryrules",
+      "apiVersion": "2022-06-15",
+      "name": "[parameters('Rule Name')]",
+      "location": "centralus",
+      "properties": {
+        "displayName": "[parameters('Rule Name')]",
+        "description": "Steal Managed Identity JsonWebToken: Azure Kubernetes Service IMDS Request",
+        "severity": 2,
+        "enabled": true,
+        "evaluationFrequency": "PT15M",
+        "Scopes": [
+          "[subscription().id]"
+        ],
+        "windowSize": "PT15M",
+        "criteria": {
+          "allOf": [
+            {
+              "query": "AzureDiagnostics | where log_s has '169.254.169.254'",
+              "timeAggregation": "Count",
+              "dimensions": [],
+              "operator": "GreaterThanOrEqual",
+              "threshold": 1,
+              "failingPeriods": {
+                "numberOfEvaluationPeriods": 1,
+                "minFailingPeriodsToAlert": 1
+              }
+            }
+          ]
+        },
+        "autoMitigate": false
+      }
+    }
+  ]
+}

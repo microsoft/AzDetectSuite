@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "Rule Name": {
+      "defaultValue": "AZT504",
+      "type": "String"
+    }
+  },
+  "variables": {},
+  "resources": [
+    {
+      "type": "microsoft.insights/scheduledqueryrules",
+      "apiVersion": "2022-06-15",
+      "name": "[parameters('Rule Name')]",
+      "location": "[resourceGroup().location]",
+      "properties": {
+        "displayName": "[parameters('Rule Name')]",
+        "description": "Watcher Tasks",
+        "severity": 2,
+        "enabled": true,
+        "evaluationFrequency": "PT15M",
+        "Scopes": [
+          "[subscription().id]"
+        ],
+        "windowSize": "PT15M",
+        "criteria": {
+          "allOf": [
+            {
+              "query": "AzureActivity | where OperationNameValue == 'MICROSOFT.AUTOMATION/AUTOMATIONACCOUNTS/WATCHERS/WATCHERACTIONS/WRITE'",
+              "timeAggregation": "Count",
+              "dimensions": [],
+              "operator": "GreaterThanOrEqual",
+              "threshold": 1,
+              "failingPeriods": {
+                "numberOfEvaluationPeriods": 1,
+                "minFailingPeriodsToAlert": 1
+              }
+            }
+          ]
+        },
+        "autoMitigate": false
+      }
+    }
+  ]
+}

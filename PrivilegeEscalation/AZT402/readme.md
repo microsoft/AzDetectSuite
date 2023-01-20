@@ -1,0 +1,3 @@
+| ID          | Name                                                             |Deploy|
+| ----------- |------------------------------------------------------------------|------|
+| AZT402    | Elevated Access Toggle|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhausec%2FAzDetectSuite%2Fmain%2FAzureThreatResearchMatrix%2FPrivilegeEscalation%2FAZT402%2FAZT402.json)|

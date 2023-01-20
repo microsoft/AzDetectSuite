@@ -1,0 +1,5 @@
+| ID          | Name                                                             |Deploy|
+| ----------- |------------------------------------------------------------------|------|
+| AZT604.1    | Azure Key Vault Dumping: Azure Key Vault Secret Dump|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhausec%2FAzDetectSuite%2Fmain%2FAzureThreatResearchMatrix%2FCredentialAccess%2FAZT604%2FAZT604-1.json)|
+| AZT604.2    | Azure Key Vault Dumping: Azure Key Vault Certificate Dump|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhausec%2FAzDetectSuite%2Fmain%2FAzureThreatResearchMatrix%2FCredentialAccess%2FAZT604%2FAZT604-2.json)|
+| AZT604.3    | Azure Key Vault Dumping: Azure Key Vault Key Dump|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhausec%2FAzDetectSuite%2Fmain%2FAzureThreatResearchMatrix%2FCredentialAccess%2FAZT604%2FAZT604-3.json)|

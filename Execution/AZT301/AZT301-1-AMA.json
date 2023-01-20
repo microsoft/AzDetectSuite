@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "Rule Name": {
+      "defaultValue": "AZT301.1",
+      "type": "String"
+    }
+  },
+  "variables": {},
+  "resources": [
+    {
+      "type": "microsoft.insights/scheduledqueryrules",
+      "apiVersion": "2022-06-15",
+      "name": "[parameters('Rule Name')]",
+      "location": "[resourceGroup().location]",
+      "properties": {
+        "displayName": "[parameters('Rule Name')]",
+        "description": "Virtual Machine Scripting: RunCommand. Requires Azure Monitor Agent and PowerShell Scriptblock Logging turned on.",
+        "severity": 2,
+        "enabled": true,
+        "evaluationFrequency": "PT15M",
+        "Scopes": [
+          "[subscription().id]"
+        ],
+        "windowSize": "PT15M",
+        "criteria": {
+          "allOf": [
+            {
+              "query": "let timeframe = toscalar(AzureActivity | where OperationNameValue == 'MICROSOFT.COMPUTE/VIRTUALMACHINES/RUNCOMMAND/ACTION' and ActivityStatusValue == 'Success' | distinct TimeGenerated); Event | where EventID  == '4104' and RenderedDescription has 'RunCommandWindows' | where (timeframe - TimeGenerated) <= 1m",
+              "timeAggregation": "Count",
+              "dimensions": [],
+              "operator": "GreaterThanOrEqual",
+              "threshold": 1,
+              "failingPeriods": {
+                "numberOfEvaluationPeriods": 1,
+                "minFailingPeriodsToAlert": 1
+              }
+            }
+          ]
+        },
+        "autoMitigate": false
+      }
+    }
+  ]
+}

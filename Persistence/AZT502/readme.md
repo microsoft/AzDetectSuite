@@ -1,0 +1,5 @@
+| ID          | Name                                                             |Deploy|
+| ----------- |------------------------------------------------------------------|------|
+| AZT502.1    | Account Creation: User Account Creation |[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhausec%2FAzDetectSuite%2Fmain%2FAzureThreatResearchMatrix%2FPersistence%2FAZT502%2FAZT502-1.json)|
+| AZT502.2    | Account Creation: Service Principal Creation |[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhausec%2FAzDetectSuite%2Fmain%2FAzureThreatResearchMatrix%2FPersistence%2FAZT502%2FAZT502-2.json)|
+| AZT502.3    | Account Creation: Guest Account Creation |[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhausec%2FAzDetectSuite%2Fmain%2FAzureThreatResearchMatrix%2FPersistence%2FAZT502%2FAZT502-3.json)|

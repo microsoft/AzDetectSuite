@@ -1,0 +1,63 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "Rule Name": {
+            "defaultValue": "AZT405.3",
+            "type": "String"
+        },
+		"LogAnalytics Workspace Name": {
+		  "type": "String",
+		  "metadata": {
+			"description": "Name of the LogAnalytics workspace that AzureAD is feeding to."
+		  }
+		},
+		"LogAnalytics Workspace Resource Group": {
+		  "type": "String",
+		  "metadata": {
+			"description": "The resource group that the workspace is located in."
+		  }
+		}
+    },
+    "variables": {
+	  "LWRef": "[resourceId(parameters('LogAnalytics Workspace Resource Group'), 'Microsoft.OperationalInsights/workspaces', parameters('LogAnalytics Workspace Name'))]"
+    },
+    "resources": [
+        {
+            "type": "microsoft.insights/scheduledqueryrules",
+            "apiVersion": "2022-06-15",
+            "name": "[parameters('Rule Name')]",
+            "location": "[resourceGroup().location]",
+            "properties": {
+                "displayName": "[parameters('Rule Name')]",
+                "severity": 2,
+				"description": "Azure AD Application: Application Registration Owner",
+                "enabled": true,
+                "evaluationFrequency": "PT15M",
+                "scopes": [
+                    "[variables('LWRef')]"
+                ],
+                "targetResourceTypes": [
+                    "Microsoft.OperationalInsights/workspaces"
+                ],
+                "windowSize": "PT15M",
+                "criteria": {
+                    "allOf": [
+                        {
+                            "query": "AuditLogs | where OperationName == 'Update application – Certificates and secrets management' and Category== 'ApplicationManagement'",
+                            "timeAggregation": "Count",
+                            "dimensions": [],
+                            "operator": "GreaterThanOrEqual",
+                            "threshold": 1,
+                            "failingPeriods": {
+                                "numberOfEvaluationPeriods": 1,
+                                "minFailingPeriodsToAlert": 1
+                            }
+                        }
+                    ]
+                },
+                "autoMitigate": false
+            }
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "Rule Name": {
+            "defaultValue": "AZT403.1",
+            "type": "String"
+        },
+		"Storage Account ResourceGroup": {
+		  "type": "string"
+		},
+		"Storage Account Name": {
+		  "type": "string"
+		}
+    },
+    "variables": {
+	  "SARef": "[resourceId(parameters('Storage Account ResourceGroup'), 'Microsoft.Storage/storageAccounts', parameters('Storage Account Name'))]"
+    },
+    "resources": [
+        {
+            "type": "microsoft.insights/metricAlerts",
+            "apiVersion": "2018-03-01",
+            "name": "[parameters('Rule Name')]",
+            "location": "global",
+            "properties": {
+                "description": "Local Resource Hijack: Cloud Shell .IMG",
+                "severity": 2,
+                "enabled": true,
+                "scopes": [
+                    "[variables('SARef')]"
+                ],
+                "evaluationFrequency": "PT15M",
+                "windowSize": "PT15M",
+                "criteria": {
+                    "allOf": [
+                        {
+                            "threshold": 1,
+                            "name": "Metric1",
+                            "metricNamespace": "Microsoft.Storage/storageAccounts",
+                            "metricName": "Transactions",
+                            "dimensions": [
+                                {
+                                    "name": "ApiName",
+                                    "operator": "Include",
+                                    "values": [
+                                        "GetFile"
+                                    ]
+                                }
+                            ],
+                            "operator": "GreaterThanOrEqual",
+                            "timeAggregation": "Total",
+                            "criterionType": "StaticThresholdCriterion"
+                        }
+                    ],
+                    "odata.type": "Microsoft.Azure.Monitor.SingleResourceMultipleMetricCriteria"
+                },
+                "autoMitigate": true,
+                "targetResourceType": "Microsoft.Storage/storageAccounts",
+                "targetResourceRegion": "[resourceGroup().location]",
+                "actions": []
+            }
+        }
+    ]
+}
