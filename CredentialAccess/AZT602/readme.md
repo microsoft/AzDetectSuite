@@ -1,3 +1,3 @@
 | ID          | Name                                                             |Deploy|
 | ----------- |------------------------------------------------------------------|------|
-| AZT602.1    | Steal Service Principal Certificate: Automation Account RunAs Account|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhausec%2FAzDetectSuite%2Fmain%2FAzureThreatResearchMatrix%2FCredentialAccess%2FAZT602%2FAZT602-1.json)|
+| AZT602.1    | Steal Service Principal Certificate: Automation Account RunAs Account|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FAzDetectSuite%2Fmain%2FAzureThreatResearchMatrix%2FCredentialAccess%2FAZT602%2FAZT602-1.json)|
