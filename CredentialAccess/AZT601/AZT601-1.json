@@ -27,8 +27,7 @@
         "criteria": {
           "allOf": [
             {
-              "query": "Syslog | where SyslogMessage has 'http://169.254.169.254/metadata' 
-Event | where EventID == 4104 and RenderedDescription has 'http://169.254.169.254/metadata/identity/oauth2/token'",
+              "query": "union Event, Syslog | where EventID == 4104 and RenderedDescription has 'http://169.254.169.254/metadata/identity/oauth2/token' or SyslogMessage has 'http://169.254.169.254/metadata'",
               "timeAggregation": "Count",
               "dimensions": [],
               "operator": "GreaterThanOrEqual",
