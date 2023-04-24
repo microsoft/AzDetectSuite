@@ -1,0 +1,3 @@
+| ID          | Name                                                             |Deploy|
+| ----------- |------------------------------------------------------------------|------|
+| AZT603.1    | Service Principal Secret Reveal: Function App Settings|[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FAzDetectSuite%2Fmain%2FAzureThreatResearchMatrix%2FCredentialAccess%2FAZT603%2FAZT603-1.json)|
