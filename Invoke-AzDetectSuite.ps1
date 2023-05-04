@@ -2,6 +2,9 @@
 <# 
 .SYNOPSIS
     This will programatically upload an entire tactic's detection suite or all of AzDetectSuite detections to a supplied resource group.
+	
+.NOTES 
+	This requires Az PowerShell to use. 	
 
 .PARAMETER Tactic
     Which tactic to upload all alerts from. E.g. 'Execution' will upload only the detections from the Execution tactic.
@@ -19,7 +22,9 @@
     Param(
     [Parameter(Mandatory=$false)][String]$Tactic = $null,
     [Parameter(Mandatory=$true)][String]$ResourceGroup = $null)
-    
+	$Modules = Get-InstalledModule
+	if ($Modules.Name -notcontains 'Az.Accounts')
+		{Write-Error "This requires Az PowerShell. Install with the following command, then re-open a PowerShell window: Install-Module -Name Az -Repository PSGallery -Force"}
     If($Tactic)
     {
        $manifest = irm -uri https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/AzureThreatResearchMatrix/$Tactic/manifest.md
