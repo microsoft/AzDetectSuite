@@ -1,0 +1,14 @@
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/Persistence/AZT501/AZT501-1.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/Persistence/AZT501/AZT501-2.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/Persistence/AZT501/AZT501-3.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/Persistence/AZT502/AZT502-1.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/Persistence/AZT502/AZT502-2.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/Persistence/AZT502/AZT502-3.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/Persistence/AZT503/AZT503-1.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/Persistence/AZT503/AZT503-2.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/Persistence/AZT503/AZT503-3.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/Persistence/AZT503/AZT503-4.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/Persistence/AZT504/AZT504.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/Persistence/AZT505/AZT505.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/Persistence/AZT506/AZT506.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/Persistence/AZT508/AZT508.json

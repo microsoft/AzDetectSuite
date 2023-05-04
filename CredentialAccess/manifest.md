@@ -1,0 +1,11 @@
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/CredentialAccess/AZT601/AZT601-1.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/CredentialAccess/AZT601/AZT601-2.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/CredentialAccess/AZT601/AZT601-3.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/CredentialAccess/AZT601/AZT601-5.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/CredentialAccess/AZT602/AZT602-1.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/CredentialAccess/AZT603/AZT603-1.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/CredentialAccess/AZT604/AZT604-1.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/CredentialAccess/AZT604/AZT604-2.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/CredentialAccess/AZT604/AZT604-3.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/CredentialAccess/AZT605/AZT605-1.json
+https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/CredentialAccess/AZT605/AZT605-2.json
