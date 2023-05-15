@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT301.5",
+      "defaultValue": "AZT301.5 - Virtual Machine Scripting: AKS Command Invoke",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "[resourceGroup().location]",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "Virtual Machine Scripting: AKS Command Invoke",
+        "description": "Will alert whenever AKS Command Invoke is used on an AKS Cluster node.",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

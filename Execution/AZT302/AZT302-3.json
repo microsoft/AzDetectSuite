@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT302.3",
+      "defaultValue": "AZT302.3 - Unmanaged Scripting: Automation Account Managed Identity Account",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "[resourceGroup().location]",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "Unmanaged Scripting: Automation Account Managed Identity Account. This detection is based on the output from the Runbook when a MI logs in. It will alert on any MI login via Runbook",
+        "description": "This detection is based on the output from the Runbook when a MI logs in. It will alert on any MI login via Runbook",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

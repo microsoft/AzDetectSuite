@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT605.1",
+      "defaultValue": "AZT605.1 - Resource Secret Reveal: Storage Account Access Key Dumping",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "centralus",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "Resource Secret Reveal: Storage Account Access Key Dumping",
+        "description": "Will alert whenever the Access Keys to a storage account are listed.",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

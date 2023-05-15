@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "Rule Name": {
-            "defaultValue": "AZT405.2",
+            "defaultValue": "AZT405.2 - Azure AD Application: Application API Permissions",
             "type": "String"
         },
 		"LogAnalytics Workspace Name": {
@@ -31,7 +31,7 @@
             "properties": {
                 "displayName": "[parameters('Rule Name')]",
                 "severity": 2,
-				"description": "Azure AD Application: Application Registration Owner. Replace 'IDGOESHERE' with ObjectID of the Service Principal.",
+				"description": "Replace 'IDGOESHERE' with ObjectID of the Service Principal. Will alert whenever a specified Service Principal logs in.",
                 "enabled": true,
                 "evaluationFrequency": "PT15M",
                 "scopes": [

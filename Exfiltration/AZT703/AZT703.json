@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT703",
+      "defaultValue": "AZT703 - Replication: Storage Account Replication",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "centralus",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "Replication: Storage Account Replication",
+        "description": "Will alert when a replication policy is created in a Storage Account.",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

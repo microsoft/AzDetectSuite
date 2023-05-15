@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT503.3",
+      "defaultValue": "AZT503.3 - HTTP Trigger: Runbook Webhook",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "[resourceGroup().location]",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "Account Creation: Guest Account Creation",
+        "description": "Will alert whenever a webhook is created in an automation account.",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

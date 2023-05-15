@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT601.1",
+      "defaultValue": "AZT601.1 - Steal Managed Identity JsonWebToken: Virtual Machine IMDS Request - Azure Monitor Agent",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "centralus",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "Steal Managed Identity JsonWebToken: Virtual Machine IMDS Request. This requires the Azure Monitoring Agent on the endpoint.",
+        "description": "Will alert when a JWT for a VM is requested via IMDS. This requires the Azure Monitoring Agent on the endpoint and PowerShell scriptblock logging enabled.",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

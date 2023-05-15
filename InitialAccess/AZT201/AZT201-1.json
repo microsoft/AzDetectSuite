@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "Rule Name": {
-            "defaultValue": "AZT201.1",
+            "defaultValue": "AZT201.1 - User Account",
             "type": "String"
         },
 		"LogAnalytics Workspace Name": {
@@ -31,7 +31,7 @@
             "properties": {
                 "displayName": "[parameters('Rule Name')]",
                 "severity": 2,
-				"description": "User Account. Replace 'IDGOESHERE' with User ID.",
+				"description": "Will alert whenever a specific user account logs in. Replace 'IDGOESHERE' with User ID.",
                 "enabled": true,
                 "evaluationFrequency": "PT15M",
                 "scopes": [

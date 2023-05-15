@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT506",
+      "defaultValue": "AZT506 - Network Security Group Modification",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "[resourceGroup().location]",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "Network Security Group Modification",
+        "description": "Will alert whenever an NSG is modified.",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

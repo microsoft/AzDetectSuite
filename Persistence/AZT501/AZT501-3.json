@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT501.3",
+      "defaultValue": "AZT501.3 - Account Manipulation: Azure VM Local Administrator Manipulation",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "[resourceGroup().location]",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "Account Manipulation: Azure VM Local Administrator Manipulation",
+        "description": "Will alert whenever the local administrator password on a Windows Azure VM is reset via Azure.",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

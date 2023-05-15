@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT503.1",
+      "defaultValue": "AZT503.1 - HTTP Trigger: Logic Application HTTP Trigger",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "[resourceGroup().location]",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "HTTP Trigger: Logic Application HTTP Trigger",
+        "description": "Will alert whenever an HTTP trigger is created on a Logic Application.",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT701.2",
+      "defaultValue": "AZT701.2 - SAS URI Generation: Storage Account File Share SAS",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "centralus",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "SAS URI Generation: Storage Account File Share SAS",
+        "description": "Will alert when a UserDelegationKey is created in order to access a Storage Account.",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

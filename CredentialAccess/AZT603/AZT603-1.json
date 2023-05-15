@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT603.1",
+      "defaultValue": "AZT603.1 - Service Principal Secret Reveal: Function App Settings",
       "type": "String"
     }
   },
@@ -16,6 +16,7 @@
       "location": "centralus",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
+		"description": "Will alert whenever the service principal of a function app logs in. Replace 'NAMEOFFUNCTIONAPP' with the actual name of the fuction app you want to monitor.",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

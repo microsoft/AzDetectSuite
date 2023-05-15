@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT604.2",
+      "defaultValue": "AZT604.2 - Azure Key Vault Dumping: Azure Key Vault Certificate Dump",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "centralus",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "Azure Key Vault Dumping: Azure Key Vault Certificate Dump",
+        "description": "Will alert whenever a Certificate or Secret in a Key Vault is requested.",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

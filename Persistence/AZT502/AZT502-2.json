@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "Rule Name": {
-            "defaultValue": "AZT502.2",
+            "defaultValue": "AZT502.2 - Account Creation: Service Principal Creation",
             "type": "String"
         },
 		"LogAnalytics Workspace Name": {
@@ -31,7 +31,7 @@
             "properties": {
                 "displayName": "[parameters('Rule Name')]",
                 "severity": 2,
-				"description": "Account Creation: Service Principal Creation",
+				"description": "Will alert whenever a service principal is manually created.",
                 "enabled": true,
                 "evaluationFrequency": "PT15M",
                 "scopes": [

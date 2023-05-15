@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "Rule Name": {
-            "defaultValue": "AZT503.2",
+            "defaultValue": "AZT503.2 - HTTP Trigger: Function App HTTP Trigger",
             "type": "String"
         },
 		"LogAnalytics Workspace Name": {
@@ -31,7 +31,7 @@
             "properties": {
                 "displayName": "[parameters('Rule Name')]",
                 "severity": 2,
-				"description": "HTTP Trigger: Function App HTTP Trigger",
+				"description": "Will alert whenever a function app is started or updated. ",
                 "enabled": true,
                 "evaluationFrequency": "PT15M",
                 "scopes": [

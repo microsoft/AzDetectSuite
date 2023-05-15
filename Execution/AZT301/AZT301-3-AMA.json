@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT301.3 with Azure Monitor Agent",
+      "defaultValue": "AZT301.3 - Virtual Machine Scripting: Desired State Configuration - Azure Monitor Agent",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "[resourceGroup().location]",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "Virtual Machine Scripting: Desired State Configuration. Requires Azure Monitor Agent",
+        "description": "Requires Azure Monitor Agent and PowerShell scriptblock logging enabled. This will return the command run. Will alert whenever DSC is used to run a command on a VM",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

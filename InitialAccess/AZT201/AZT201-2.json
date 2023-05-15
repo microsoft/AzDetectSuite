@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "Rule Name": {
-            "defaultValue": "AZT201.2",
+            "defaultValue": "AZT201.2 - Service Principal Account",
             "type": "String"
         },
 		"LogAnalytics Workspace Name": {
@@ -31,7 +31,7 @@
             "properties": {
                 "displayName": "[parameters('Rule Name')]",
                 "severity": 2,
-				"description": "Service Principal Account. Replace 'IDGOESHERE' with SP Object ID.",
+				"description": "This will alert whenever a service principal with a specific ID logs in. Replace 'IDGOESHERE' with SP Object ID.",
                 "enabled": true,
                 "evaluationFrequency": "PT15M",
                 "scopes": [

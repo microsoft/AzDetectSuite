@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT404.1",
+      "defaultValue": "AZT404.1 - Principal Impersonation: Function Application",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "centralus",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "Principal Impersonation: Function Application",
+        "description": "Will alert whenever a function app executes and a principal of the same name logs in, suggesting a token was generated and used to login.",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

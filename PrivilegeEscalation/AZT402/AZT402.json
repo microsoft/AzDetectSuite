@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "Rule Name": {
-            "defaultValue": "AZT402",
+            "defaultValue": "AZT402 - Elevated Access Toggle",
             "type": "String"
         },
 		"LogAnalytics Workspace Name": {
@@ -31,7 +31,7 @@
             "properties": {
                 "displayName": "[parameters('Rule Name')]",
                 "severity": 2,
-				"description": "Elevated Access Toggle - Requires P1 or P2 license",
+				"description": "This requires P1 or P2 license. Will alert when someone enables the 'Elevated Access' button.",
                 "enabled": true,
                 "evaluationFrequency": "PT15M",
                 "scopes": [

@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT704.1",
+      "defaultValue": "AZT704.1 - Soft-Delete Recovery: Key Vault",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "centralus",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": " Soft-Delete Recovery: Key Vault",
+        "description": "Will alert when a key vault item is restored after being deleted.",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

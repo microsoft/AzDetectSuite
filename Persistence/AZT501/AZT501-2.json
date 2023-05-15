@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT501.2",
+      "defaultValue": "AZT501.2 - Account Manipulation: Service Principal Manipulation",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "[resourceGroup().location]",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "Account Manipulation: Service Principal Manipulation",
+        "description": "Will alert whenever a new password is added to a user or service principal account.",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "Rule Name": {
-            "defaultValue": "AZT502.3",
+            "defaultValue": "AZT502.3 - Account Creation: Guest Account Creation",
             "type": "String"
         },
 		"LogAnalytics Workspace Name": {
@@ -31,7 +31,7 @@
             "properties": {
                 "displayName": "[parameters('Rule Name')]",
                 "severity": 2,
-				"description": "Account Creation: Guest Account Creation",
+				"description": "Will alert whenever a guest account is created in AAD.",
                 "enabled": true,
                 "evaluationFrequency": "PT15M",
                 "scopes": [

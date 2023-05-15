@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT701.1",
+      "defaultValue": "AZT701.1 - SAS URI Generation: VM Disk SAS URI",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "centralus",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "SAS URI Generation: VM Disk SAS URI",
+        "description": "Will alert when a SAS URI is created for a VM disk.",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

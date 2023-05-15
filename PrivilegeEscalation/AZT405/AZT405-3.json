@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "Rule Name": {
-            "defaultValue": "AZT405.3",
+            "defaultValue": "AZT405.3 - Azure AD Application: Application Registration Owner",
             "type": "String"
         },
 		"LogAnalytics Workspace Name": {
@@ -31,7 +31,7 @@
             "properties": {
                 "displayName": "[parameters('Rule Name')]",
                 "severity": 2,
-				"description": "Azure AD Application: Application Registration Owner",
+				"description": "Will alert whenever an application is updated with a new secret or owner",
                 "enabled": true,
                 "evaluationFrequency": "PT15M",
                 "scopes": [

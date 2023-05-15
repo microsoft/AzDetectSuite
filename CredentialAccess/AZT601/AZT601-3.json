@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT601.3",
+      "defaultValue": "AZT601.3 - Steal Managed Identity JsonWebToken: Logic Application JWT PUT Request",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "centralus",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "Steal Managed Identity JsonWebToken: Logic Application JWT PUT Request",
+        "description": "Will alert whenever a JWT is gathered via Logic Application",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

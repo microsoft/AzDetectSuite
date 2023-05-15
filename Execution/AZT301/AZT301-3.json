@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT301.3",
+      "defaultValue": "AZT301.3 - "Virtual Machine Scripting: Desired State Configuration",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "[resourceGroup().location]",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "Virtual Machine Scripting: Desired State Configuration",
+        "description": "Will alert whenever DSC is used to run a command on a VM",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT508",
+      "defaultValue": "AZT508 - Azure Policy",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "[resourceGroup().location]",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "Azure Policy",
+        "description": "Will alert whenever a policy is changed.",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

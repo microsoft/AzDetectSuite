@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "Rule Name": {
-            "defaultValue": "AZT403.1",
+            "defaultValue": "AZT403.1 - Local Resource Hijack: Cloud Shell .IMG",
             "type": "String"
         },
 		"Storage Account ResourceGroup": {
@@ -23,7 +23,7 @@
             "name": "[parameters('Rule Name')]",
             "location": "global",
             "properties": {
-                "description": "Local Resource Hijack: Cloud Shell .IMG",
+                "description": "Will alert whenever a .IMG file is replaced",
                 "severity": 2,
                 "enabled": true,
                 "scopes": [

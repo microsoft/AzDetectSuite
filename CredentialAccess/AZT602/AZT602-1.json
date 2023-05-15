@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT602.1",
+      "defaultValue": "AZT602.1 - Steal Service Principal Certificate: Automation Account RunAs Account",
       "type": "String"
     }
   },
@@ -16,6 +16,7 @@
       "location": "centralus",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
+		"description": "Wil alert whenever a RunAs account certificate is dumped.",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT301.2",
+      "defaultValue": "AZT301.2 - Virtual Machine Scripting: CustomScriptExtension",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "[resourceGroup().location]",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "Virtual Machine Scripting: CustomScriptExtension",
+        "description": "Will alert whenever CSE is used to run a command on a VM",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

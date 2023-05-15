@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT605.2",
+      "defaultValue": "AZT605.2 - Resource Secret Reveal: Automation Account Credential Secret Dump",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "centralus",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "Resource Secret Reveal: Automation Account Credential Secret Dump",
+        "description": "Will alert whenever a Runbook is configured to dump pre-configured credentials.",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",

@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT505",
+      "defaultValue": "AZT505 - Scheduled Jobs - Runbook Schedules",
       "type": "String"
     }
   },
@@ -16,7 +16,7 @@
       "location": "[resourceGroup().location]",
       "properties": {
         "displayName": "[parameters('Rule Name')]",
-        "description": "Scheduled Jobs - Runbook Schedules",
+        "description": "Will alert whenever an Automation Account watcher is created",
         "severity": 2,
         "enabled": true,
         "evaluationFrequency": "PT15M",
