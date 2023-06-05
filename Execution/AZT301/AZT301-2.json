@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT301.2 - Virtual Machine Scripting: CustomScriptExtension",
+      "defaultValue": "AZT301.2 - Virtual Machine Scripting - CustomScriptExtension",
       "type": "String"
     }
   },

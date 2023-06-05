@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "Rule Name": {
-            "defaultValue": "AZT203- Malicious Application Consent",
+            "defaultValue": "AZT203 - Malicious Application Consent",
             "type": "String"
         },
 		"LogAnalytics Workspace Name": {

@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT301.1 - Virtual Machine Scripting: RunCommand - Azure Monitor Agent",
+      "defaultValue": "AZT301.1 - Virtual Machine Scripting - RunCommand - Azure Monitor Agent",
       "type": "String"
     }
   },

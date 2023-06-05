@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT605.2 - Resource Secret Reveal: Automation Account Credential Secret Dump",
+      "defaultValue": "AZT605.2 - Resource Secret Reveal - Automation Account Credential Secret Dump",
       "type": "String"
     }
   },

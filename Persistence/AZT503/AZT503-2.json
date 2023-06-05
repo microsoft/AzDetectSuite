@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "Rule Name": {
-            "defaultValue": "AZT503.2 - HTTP Trigger: Function App HTTP Trigger",
+            "defaultValue": "AZT503.2 - HTTP Trigger - Function App HTTP Trigger",
             "type": "String"
         },
 		"LogAnalytics Workspace Name": {

@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT302.2 - Unmanaged Scripting: Automation Account RunAs Account",
+      "defaultValue": "AZT302.2 - Unmanaged Scripting - Automation Account RunAs Account",
       "type": "String"
     }
   },

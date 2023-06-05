@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "Rule Name": {
-            "defaultValue": "AZT403.1 - Local Resource Hijack: Cloud Shell .IMG",
+            "defaultValue": "AZT403.1 - Local Resource Hijack - Cloud Shell .IMG",
             "type": "String"
         },
 		"Storage Account ResourceGroup": {

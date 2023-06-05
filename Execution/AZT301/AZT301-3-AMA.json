@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT301.3 - Virtual Machine Scripting: Desired State Configuration - Azure Monitor Agent",
+      "defaultValue": "AZT301.3 - Virtual Machine Scripting - Desired State Configuration - Azure Monitor Agent",
       "type": "String"
     }
   },

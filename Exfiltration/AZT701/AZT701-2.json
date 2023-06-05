@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT701.2 - SAS URI Generation: Storage Account File Share SAS",
+      "defaultValue": "AZT701.2 - SAS URI Generation - Storage Account File Share SAS",
       "type": "String"
     }
   },

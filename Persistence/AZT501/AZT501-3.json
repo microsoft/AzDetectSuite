@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT501.3 - Account Manipulation: Azure VM Local Administrator Manipulation",
+      "defaultValue": "AZT501.3 - Account Manipulation - Azure VM Local Administrator Manipulation",
       "type": "String"
     }
   },

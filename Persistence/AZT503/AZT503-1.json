@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT503.1 - HTTP Trigger: Logic Application HTTP Trigger",
+      "defaultValue": "AZT503.1 - HTTP Trigger - Logic Application HTTP Trigger",
       "type": "String"
     }
   },

@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT601.1 - Steal Managed Identity JsonWebToken: Virtual Machine IMDS Request - Azure Monitor Agent",
+      "defaultValue": "AZT601.1 - Steal Managed Identity JsonWebToken - Virtual Machine IMDS Request - Azure Monitor Agent",
       "type": "String"
     }
   },

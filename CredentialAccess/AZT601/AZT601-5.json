@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT601.5 - Steal Managed Identity JsonWebToken: Automation Account Runbook",
+      "defaultValue": "AZT601.5 - Steal Managed Identity JsonWebToken - Automation Account Runbook",
       "type": "String"
     }
   },

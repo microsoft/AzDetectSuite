@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT302.3 - Unmanaged Scripting: Automation Account Managed Identity Account",
+      "defaultValue": "AZT302.3 - Unmanaged Scripting - Automation Account Managed Identity Account",
       "type": "String"
     }
   },

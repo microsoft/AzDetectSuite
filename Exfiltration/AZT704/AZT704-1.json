@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT704.1 - Soft-Delete Recovery: Key Vault",
+      "defaultValue": "AZT704.1 - Soft-Delete Recovery - Key Vault",
       "type": "String"
     }
   },

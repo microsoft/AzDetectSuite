@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "Rule Name": {
-            "defaultValue": "AZT502.1 - Account Creation: User Account Creation",
+            "defaultValue": "AZT502.1 - Account Creation - User Account Creation",
             "type": "String"
         },
 		"LogAnalytics Workspace Name": {

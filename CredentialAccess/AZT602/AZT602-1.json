@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT602.1 - Steal Service Principal Certificate: Automation Account RunAs Account",
+      "defaultValue": "AZT602.1 - Steal Service Principal Certificate - Automation Account RunAs Account",
       "type": "String"
     }
   },

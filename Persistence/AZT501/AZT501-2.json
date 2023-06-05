@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT501.2 - Account Manipulation: Service Principal Manipulation",
+      "defaultValue": "AZT501.2 - Account Manipulation - Service Principal Manipulation",
       "type": "String"
     }
   },

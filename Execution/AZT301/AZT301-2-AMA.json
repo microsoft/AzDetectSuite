@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT301.2 - Virtual Machine Scripting: CustomScriptExtension - Azure Monitor Agent",
+      "defaultValue": "AZT301.2 - Virtual Machine Scripting - CustomScriptExtension - Azure Monitor Agent",
       "type": "String"
     }
   },

@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "Rule Name": {
-            "defaultValue": "AZT502.3 - Account Creation: Guest Account Creation",
+            "defaultValue": "AZT502.3 - Account Creation - Guest Account Creation",
             "type": "String"
         },
 		"LogAnalytics Workspace Name": {

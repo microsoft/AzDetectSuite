@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT704.2 - Soft-Delete Recovery: Storage Object",
+      "defaultValue": "AZT704.2 - Soft-Delete Recovery - Storage Object",
       "type": "String"
     }
   },

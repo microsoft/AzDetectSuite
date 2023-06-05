@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT404.1 - Principal Impersonation: Function Application",
+      "defaultValue": "AZT404.1 - Principal Impersonation - Function Application",
       "type": "String"
     }
   },

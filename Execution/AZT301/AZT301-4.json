@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT301.4 - Virtual Machine Scripting: Compute Gallery Application",
+      "defaultValue": "AZT301.4 - Virtual Machine Scripting - Compute Gallery Application",
       "type": "String"
     }
   },

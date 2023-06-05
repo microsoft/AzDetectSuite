@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT604.2 - Azure Key Vault Dumping: Azure Key Vault Certificate Dump",
+      "defaultValue": "AZT604.2 - Azure Key Vault Dumping - Azure Key Vault Certificate Dump",
       "type": "String"
     }
   },

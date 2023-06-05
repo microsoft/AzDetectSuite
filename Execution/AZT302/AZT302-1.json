@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT302.1 - Unmanaged Scripting: Automation Account Hybrid Worker Group",
+      "defaultValue": "AZT302.1 - Unmanaged Scripting - Automation Account Hybrid Worker Group",
       "type": "String"
     }
   },

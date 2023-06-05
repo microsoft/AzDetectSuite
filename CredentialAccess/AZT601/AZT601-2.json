@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT601.2 - Steal Managed Identity JsonWebToken: Azure Kubernetes Service IMDS Request",
+      "defaultValue": "AZT601.2 - Steal Managed Identity JsonWebToken - Azure Kubernetes Service IMDS Request",
       "type": "String"
     }
   },

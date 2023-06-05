@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT603.1 - Service Principal Secret Reveal: Function App Settings",
+      "defaultValue": "AZT603.1 - Service Principal Secret Reveal - Function App Settings",
       "type": "String"
     }
   },

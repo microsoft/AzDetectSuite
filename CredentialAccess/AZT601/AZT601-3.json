@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT601.3 - Steal Managed Identity JsonWebToken: Logic Application JWT PUT Request",
+      "defaultValue": "AZT601.3 - Steal Managed Identity JsonWebToken - Logic Application JWT PUT Request",
       "type": "String"
     }
   },

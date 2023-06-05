@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "Rule Name": {
-            "defaultValue": "AZT405.1 - Azure AD Application: Application Registration Owner",
+            "defaultValue": "AZT405.1 - Azure AD Application - Application Registration Owner",
             "type": "String"
         },
 		"LogAnalytics Workspace Name": {

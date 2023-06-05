@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "Rule Name": {
-      "defaultValue": "AZT503.3 - HTTP Trigger: Runbook Webhook",
+      "defaultValue": "AZT503.3 - HTTP Trigger - Runbook Webhook",
       "type": "String"
     }
   },
