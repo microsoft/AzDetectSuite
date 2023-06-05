@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "Rule Name": {
-            "defaultValue": "AZT501.1 - Account Manipulation: User Account Manipulation",
+            "defaultValue": "AZT501.1 - Account Manipulation - User Account Manipulation",
             "type": "String"
         },
 		"LogAnalytics Workspace Name": {
