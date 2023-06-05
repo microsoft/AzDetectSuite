@@ -27,7 +27,7 @@
 		{Write-Error "This requires Az PowerShell. Install with the following command, then re-open a PowerShell window: Install-Module -Name Az -Repository PSGallery -Force"}
     If($Tactic)
     {
-       $manifest = irm -uri https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/AzureThreatResearchMatrix/$Tactic/manifest.md
+       $manifest = irm -uri https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/$Tactic/manifest.md
     }
     else{$manifest = irm -uri https://raw.githubusercontent.com/microsoft/AzDetectSuite/main/manifest.md -UseBasicParsing}
     $list = $manifest.Split([Environment]::NewLine)
