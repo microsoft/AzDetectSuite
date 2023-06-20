@@ -27,7 +27,7 @@
         "criteria": {
           "allOf": [
             {
-              "query": "AzureActivity | where OperationNameValue == 'MICROSOFT.COMPUTE/VIRTUALMACHINES/RUNCOMMAND/ACTION' and ActivityStatusValue == 'Success'",
+              "query": "AzureActivity | where OperationNameValue has 'MICROSOFT.COMPUTE/VIRTUALMACHINES/RUNCOMMAND/ACTION' and ActivityStatusValue == 'Success' or OperationNameValue has 'MICROSOFT.COMPUTE/VIRTUALMACHINES/RUNCOMMANDS/WRITE' and ActivityStatusValue == 'Success'",
               "timeAggregation": "Count",
               "dimensions": [],
               "operator": "GreaterThanOrEqual",
